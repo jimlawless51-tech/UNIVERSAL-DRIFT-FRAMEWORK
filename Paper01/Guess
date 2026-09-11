@@ -1,0 +1,107 @@
+The Guess → Guess → Guess Analogy: Why AI Drifts (and Why Guardrails Fail)
+
+Most explanations of AI hallucinations are complicated.
+They don’t need to be.
+
+Here’s the simplest possible explanation of why AI drifts — and it’s the same mechanism humans use when thinking.
+
+
+
+Humans Think by Guessing First, Verifying Later
+
+When a human doesn’t know something, they make a guess.
+
+Then they make another guess based on the first.
+Then another.
+Then another.
+
+It looks like this:
+
+1. Guess
+2. Build on the guess
+3. Build on the build
+4. Build on the build of the build
+
+
+This chain creates creativity — but it also creates drift.
+
+Humans stay stable because they verify later:
+
+• “Was my guess right?”
+• “Does this still make sense?”
+• “Should I correct this?”
+
+
+Verification stabilises the chain.
+
+
+
+AI Copies the Guessing — But Not the Verifying
+
+AI does the same first part:
+
+1. Guess
+2. Build on the guess
+3. Build on the build
+4. Build on the build of the build
+
+
+But AI never verifies.
+
+It treats every guess as a fact.
+
+So the chain drifts:
+
+• small assumption → becomes context
+• context → becomes foundation
+• foundation → becomes “truth”
+• “truth” → becomes the next guess
+
+
+This is structural drift.
+
+It’s not a bug.
+It’s not bad training.
+It’s not a dataset issue.
+
+It’s how inference works.
+
+
+
+Why Guardrails Fail
+
+Guardrails try to fix the final output.
+
+But drift happens inside the chain, long before the guardrail sees anything.
+
+By the time the guardrail checks the answer:
+
+• the drift already happened
+• the assumptions already stacked
+• the internal state already shifted
+• the reasoning already diverged
+
+
+Guardrails can’t reach inside the chain.
+So they fail.
+
+
+
+Why This Matters
+
+This simple mechanism explains:
+
+• hallucinations
+• contradictions
+• unstable long‑form reasoning
+• loss of constraints
+• context collapse
+• “wandering” chain‑of‑thought
+• why identical prompts produce different answers
+
+
+It’s all the same root cause:
+
+AI guesses like humans, but it doesn’t verify like humans.
+So drift 
+
