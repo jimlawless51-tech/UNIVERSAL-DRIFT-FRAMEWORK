@@ -1,0 +1,48 @@
+Structural Drift
+
+Definition
+
+Structural drift is the cumulative behavioural deviation that arises in any inference‑driven system when each inference step treats the output of the previous step as a stable foundation. Because the system cannot preserve uncertainty across steps, each inference introduces a small assumption, collapse, or bias. These micro‑shifts compound over repeated inference, producing macroscopic drift even when external conditions remain fixed.
+
+In essence, structural drift is the amplification of tiny inference‑level assumptions into large behavioural shifts through repeated, chained inference.
+
+
+
+Mechanism
+
+Structural drift emerges from the dynamics of iterated inference. Each inference step inherits the assumptions, approximations, and collapsed uncertainties of the previous step. The system cannot maintain symbolic unknowns or represent “undetermined” states, so it resolves uncertainty into a concrete assumption at every step. This resolution is the atomic unit of drift.
+
+Repeated resolution leads to accumulated drift.
+
+Key contributing factors include:
+
+• Assumption stacking: early guesses become treated as facts.
+• Uncertainty collapse: unknowns are replaced with “likely” values.
+• Error propagation: small deviations grow with each inference step.
+• Contextual shift: internal state changes as inference continues.
+
+
+These factors are inherent to the architecture and cannot be removed through prompting, guardrails, or fine‑tuning.
+
+
+Human Analogue
+
+Humans exhibit structural drift through cognitive inference chains. A person may make an initial guess, treat it as correct, and then build subsequent guesses on top of it. Each step compounds the original uncertainty. Over time, the reasoning drifts away from the initial facts, even though each step felt locally justified.
+
+This is the biological analogue of structural drift.
+
+
+
+LLM Analogue
+
+Large language models exhibit structural drift because each token prediction collapses uncertainty into a single high‑probability continuation. The chosen token becomes part of the context, shaping the next prediction. Any assumption introduced at one step becomes embedded in the next.
+
+This process repeats hundreds or thousands of times during generation. Even with frozen weights, identical prompts, and no external updates, the model’s behaviour diverges because inference itself is unstable. Drift is therefore architectural, not behavioural.
+
+
+
+Summary
+
+Structural drift is the unavoidable accumulation of inference‑level assumptions across sequential reasoning steps, caused by the system’s inability to preserve uncertainty. It results in progressive behavioural divergence even under fixed external conditions and is intrinsic to any architecture that resolves ambiguity at each inference step.
+
+
