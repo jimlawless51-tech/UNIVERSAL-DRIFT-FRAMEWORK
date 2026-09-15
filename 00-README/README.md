@@ -3,12 +3,10 @@
 Drift Science is a unified framework for understanding how systems, identities and AI models change over time. This repository contains the core text and concepts from the Drift Science monograph.
 
 ## Contents
-- Monograph
-- 
+- Monologue 
 - The Universal Drift Framework
 
 - Papers
-
 - Guess
 - Structural-Drift
 - Internet-Proto-AI-Ecosystem
