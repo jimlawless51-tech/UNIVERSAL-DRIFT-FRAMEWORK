@@ -4,7 +4,7 @@ Drift Science is a unified framework for understanding how systems, identities a
 
 Contents
 
-• Monograph — the full theoretical text; includes The Universal Drift Framework (same document)
+• Monologue-the full theoretical text; includes The Universal Drift Framework (same document)
 • Papers — standalone theoretical expansions
 • Guess — the introductory paper explaining the basic mechanism of AI drift
 • Structural‑Drift — the next step up from Guess; formalised and applied drift mechanics
